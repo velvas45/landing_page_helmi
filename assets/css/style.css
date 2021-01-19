@@ -75,7 +75,7 @@ section {
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("/assets/img/banner_4.jpg");
+  background: url("../img/banner_4.jpg");
   background-position: center center;
   display: flex;
   justify-content: flex-end;
