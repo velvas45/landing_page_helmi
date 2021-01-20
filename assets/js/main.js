@@ -8,4 +8,7 @@ function toggleMenu() {
   const menu = document.querySelector(".header__menu");
   menuToggle.classList.toggle("active");
   menu.classList.toggle("active");
-}zz
+}
+
+const spanYear = document.getElementById('year');
+spanYear.textContent = new Date().getFullYear();

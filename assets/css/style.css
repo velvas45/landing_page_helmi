@@ -67,7 +67,7 @@ html::-webkit-scrollbar {
 }
 
 section {
-  padding: 100px 40px;
+  padding: 100px 40px 20px;
 }
 
 .banner {
@@ -166,8 +166,74 @@ section {
   width: 100%;
   height: 400px;
   object-fit: cover;
-  object-position: bottom;
+  object-position: center;
 }
+
+.about__socialMediaBox {
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.about__socialMediaBox > h2 {
+  margin-bottom: 20px;
+}
+
+.about__socialMediaBox > ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about__socialMediaBox > ul > li {
+  position: relative;
+  list-style: none;
+  margin: 0 40px;
+  cursor: pointer;
+}
+
+.about__socialMediaBox > ul > li > a {
+  text-decoration: none;
+}
+
+.about__socialMediaBox ul li a .fa {
+  font-size: 5em;
+  color: #999;
+}
+
+.about__socialMediaBox ul li a::before{
+  font-family: fontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.about__socialMediaBox ul li:nth-child(1) a:before{
+  content: '\f232';
+  color: #25D366;
+  border-bottom: 4px solid #25D366;
+}
+
+.about__socialMediaBox ul li:nth-child(2) a:before{
+  content: '\f16d';
+  color: #5851DB;
+  border-bottom: 4px solid #5851DB;
+}
+
+.about__socialMediaBox ul li:nth-child(3) a:before{
+  content: '\f08c';
+  color: #0077B5;
+  border-bottom: 4px solid #0077B5;
+}
+
+.about__socialMediaBox ul li:hover a::before{
+  height: 100%;
+}
+
 
 .teknologi {
   background-color: #2e2e2e;
@@ -295,6 +361,8 @@ section {
 .project__row {
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .project__content {
